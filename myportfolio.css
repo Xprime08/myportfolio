@@ -233,4 +233,29 @@ a{
 
 footer{
     width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    
+    /* 1. Force the Full Name and Email fields to stack vertically */
+    .input-row {
+        flex-direction: column; /* Stacks the two inputs on top of each other */
+        gap: 0; /* Remove the gap when stacking */
+    }
+    
+    /* 2. Make all input fields and the textarea take up 100% width */
+    .input-row input,
+    .input-row textarea,
+    textarea {
+        width: 100% !important; /* Force them to fill the screen */
+        box-sizing: border-box; /* Crucial for padding/border not to exceed 100% */
+        margin-left: 0 !important; /* Remove any desktop margins */
+    }
+    
+    /* 3. Adjust general spacing for the form (remove your margin-left: 50px) */
+    .contact-layer {
+        margin-left: 0;
+        padding: 10px; /* Use smaller padding */
+    }
 }
