@@ -178,6 +178,12 @@ textarea{
     height: 150px;
 }
 
+.form-contact-layer .input-row {
+    flex-direction: column !important; /* Force stacking */
+    width: 100% !important; 
+    gap: 0 !important;
+}
+
 .submit-button{
     background-color: #689ceb;
     color: #11053d;
@@ -236,26 +242,45 @@ footer{
 
 }
 
+/* ---------------------------------------------------------------- */
+/* MOBILE RESPONSIVENESS FIXES (Applies to screens 600px wide or less) */
+/* ---------------------------------------------------------------- */
 @media (max-width: 600px) {
     
-    /* 1. Force the Full Name and Email fields to stack vertically */
+    /* 1. Stack the side-by-side input fields (Full Name and Email) */
     .input-row {
-        flex-direction: column; /* Stacks the two inputs on top of each other */
-        gap: 0; /* Remove the gap when stacking */
+        flex-direction: column; 
+        gap: 0; 
     }
     
-    /* 2. Make all input fields and the textarea take up 100% width */
-    .input-row input,
-    .input-row textarea,
-    textarea {
-        width: 100% !important; /* Force them to fill the screen */
-        box-sizing: border-box; /* Crucial for padding/border not to exceed 100% */
-        margin-left: 0 !important; /* Remove any desktop margins */
+    /* 2. Make all form fields and the button full width */
+    textarea, 
+    input {
+        width: 100% !important; 
+        box-sizing: border-box; 
+        margin-left: 0 !important;
     }
     
-    /* 3. Adjust general spacing for the form (remove your margin-left: 50px) */
+    /* Ensure the individual input containers are full width */
+    .input-row input {
+        width: 100% !important; 
+        min-width: unset !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px; 
+        box-sizing: border-box; 
+    }
+
+    /* 3. Center the main contact form section and remove fixed padding/margins */
     .contact-layer {
-        margin-left: 0;
-        padding: 10px; /* Use smaller padding */
+        max-width: 100%; 
+        padding: 10px; 
+        margin: 0 auto;
+    }
+    
+    /* 4. Adjust the Submit button */
+    .submit-button {
+        width: 100%; /* Make the button full width */
+        margin-left: 0 !important; /* Remove the desktop 130px margin-left */
+        margin-top: 15px; 
     }
 }
