@@ -23,7 +23,6 @@ h1{
     color: #11053d;
     border-radius: 12px;
     padding: 10px 15px; 
-max-width: 150px;
 }
 
 h2{
@@ -52,6 +51,7 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     font-weight: 600;
+max-width: 300px;
 }
 
 .grid-3{
