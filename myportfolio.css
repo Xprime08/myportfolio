@@ -242,47 +242,4 @@ a{
 footer{
     width: 100%;
 
-}
-
-/* ---------------------------------------------------------------- */
-/* MOBILE RESPONSIVENESS FIXES (Applies to screens 600px wide or less) */
-/* ---------------------------------------------------------------- */
-@media (max-width: 600px) {
-    
-    /* 1. Stack the side-by-side input fields (Full Name and Email) */
-    .input-row {
-        flex-direction: column; 
-        gap: 0; 
-    }
-    
-    /* 2. Make all form fields and the button full width */
-    textarea, 
-    input {
-        width: 100% !important; 
-        box-sizing: border-box; 
-        margin-left: 0 !important;
-    }
-    
-    /* Ensure the individual input containers are full width */
-    .input-row input {
-        width: 100% !important; 
-        min-width: unset !important;
-        margin-right: 0 !important;
-        margin-bottom: 20px; 
-        box-sizing: border-box; 
-    }
-
-    /* 3. Center the main contact form section and remove fixed padding/margins */
-    .contact-layer {
-        max-width: 100%; 
-        padding: 10px; 
-        margin: 0 auto;
-    }
-    
-    /* 4. Adjust the Submit button */
-    .submit-button {
-        width: 100%; /* Make the button full width */
-        margin-left: 0 !important; /* Remove the desktop 130px margin-left */
-        margin-top: 15px; 
-    }
-}
+}
