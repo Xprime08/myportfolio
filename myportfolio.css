@@ -4,7 +4,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-max-width: 400px;
+    max-width: 800px;
 }
 
 .center{
@@ -49,7 +49,7 @@ p{
     padding: 10px 15px;
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 8px;
     font-weight: 600;
 max-width: 300px;
 }
@@ -61,6 +61,7 @@ max-width: 300px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     font-weight: 600;
+    max-width: 300px;
 }
 
 figcaption{
@@ -104,7 +105,8 @@ text-align: center;
 figure{
     background-color: #689ceb;
     border-radius: 12px;
-    width: 120px;
+    max-width: 100px;
+    min-width: 60px;
     height: 160px;
 }
 
@@ -180,12 +182,6 @@ textarea{
     height: 150px;
 }
 
-.form-contact-layer .input-row {
-    flex-direction: column !important; /* Force stacking */
-    width: 100% !important; 
-    gap: 0 !important;
-}
-
 .submit-button{
     background-color: #689ceb;
     color: #11053d;
@@ -241,5 +237,5 @@ a{
 
 footer{
     width: 100%;
-
-}
+margin: 0;
+}
