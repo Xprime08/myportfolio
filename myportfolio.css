@@ -107,7 +107,7 @@ text-align: center;
 figure{
     background-color: #689ceb;
     border-radius: 12px;
-    max-width: 100px;
+    max-width: 200px;
     min-width: 60px;
     height: 160px;
 }
@@ -242,4 +242,5 @@ footer{
     height: 100px;
     margin: 0;
 }
+
 
