@@ -103,8 +103,8 @@ text-align: center;
 figure{
     background-color: #689ceb;
     border-radius: 1rem;
-    min-width: 60px;
-    height: 160px;
+    width: 120px;
+    height: 150px;
 }
 
 .project-image{
@@ -237,6 +237,7 @@ footer{
     height: 100px;
     margin: 0;
 }
+
 
 
 
