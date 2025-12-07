@@ -33,6 +33,7 @@ h2{
 p{
     font-size: 18px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 .profile-image{
@@ -224,6 +225,7 @@ a{
     font-weight: 400;
     padding-bottom: 0.8rem;
 }
+
 
 
 
